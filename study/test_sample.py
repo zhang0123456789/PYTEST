@@ -17,12 +17,12 @@
 可支持执行部分用例
 具有很多第三方插件，并且可以自定义扩展'''
 
-
+import pytest
 '''打开test_sample.py所在的文件夹，cmd窗口输入：pytest（或者输入py.test也可以）
 pytest运行规则：**查找当前目录及其子目录下以test_*.py或*_test.py文件，找到文件后，
-在文件中找到以test开头函数并执行。**'''
+在文件中找到以test开头函数并执行。'''
 def func(x):
     return  x+1
 
 def test_answer():
-    assert  func(3)==5
+    assert  func(3)==4
